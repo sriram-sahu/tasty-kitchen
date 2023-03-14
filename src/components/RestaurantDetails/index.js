@@ -96,7 +96,7 @@ class RestaurantDetails extends Component {
   // restaurant loader
 
   displayLoadingView = () => (
-    <div className="restaurant-Loader" testid="restaurant-details-loader">
+    <div className="restaurant-Loader" data-testid="restaurant-details-loader">
       <Loader type="Oval" color="##F7931E" height="50" width="50" />
     </div>
   )

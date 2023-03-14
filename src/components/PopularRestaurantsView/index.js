@@ -10,7 +10,7 @@ const PopularRestaurantsView = props => {
     <Link
       to={`/restaurant/${id}`}
       style={{textDecoration: 'none'}}
-      testid="restaurant-item"
+      data-testid="restaurant-item"
     >
       <li className="restaurant-container">
         <img src={imageUrl} alt="restaurant" className="restaurant-img" />

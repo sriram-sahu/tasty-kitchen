@@ -25,13 +25,19 @@ function Footer() {
       <div className="contact-us-container">
         <FaPinterestSquare
           className="footer-icon"
-          testid="pintrest-social-icon"
+          data-testid="pintrest-social-icon"
         />
-        <FaInstagram className="footer-icon" testid="instagram-social-icon" />
-        <FaTwitterSquare className="footer-icon" testid="twitter-social-icon" />
+        <FaInstagram
+          className="footer-icon"
+          data-testid="instagram-social-icon"
+        />
+        <FaTwitterSquare
+          className="footer-icon"
+          data-testid="twitter-social-icon"
+        />
         <FaFacebookSquare
           className="footer-icon"
-          testid="facebook-social-icon"
+          data-testid="facebook-social-icon"
         />
       </div>
     </div>

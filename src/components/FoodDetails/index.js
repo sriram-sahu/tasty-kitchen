@@ -108,7 +108,7 @@ class FoodDetails extends Component {
     const {isButtonClicked, itemQuantity} = this.state
 
     return (
-      <li className="food-details-container" testid="foodItem">
+      <li className="food-details-container" data-testid="foodItem">
         <img src={eachFoodItem.imageUrl} alt="food-item" className="food-img" />
         <div className="food-details">
           <h1 className="food-name">{eachFoodItem.name}</h1>
@@ -124,18 +124,18 @@ class FoodDetails extends Component {
               <button
                 type="button"
                 className="minus-icon-container"
-                testid="decrement-count"
+                data-testid="decrement-count"
                 onClick={this.decrementCartItemQuantity}
               >
                 -
               </button>
-              <p className="food-item-quantity" testid="active-count">
+              <p className="food-item-quantity" data-testid="active-count">
                 {itemQuantity}
               </p>
               <button
                 type="button"
                 className="plus-icon-container"
-                testid="increment-count"
+                data-testid="increment-count"
                 onClick={this.incrementCartItemQuantity}
               >
                 +

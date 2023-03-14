@@ -86,7 +86,7 @@ class Home extends Component {
 
   // Get carousel display loading view when status is inProgress
   carouselDisplayLoading = () => (
-    <div className="loader-container" testid="restaurants-offers-loader">
+    <div className="loader-container" data-testid="restaurants-offers-loader">
       <Loader type="Oval" color="##F7931E" height="30" width="30" />
     </div>
   )
@@ -224,7 +224,7 @@ class Home extends Component {
 
   // Display restaurant loading view while Data is fetching from resource url
   renderLoadingRestaurantsView = () => (
-    <div className="restaurants-loader" testid="restaurants-list-loader">
+    <div className="restaurants-loader" data-testid="restaurants-list-loader">
       <Loader type="Oval" color="##F7931E" height="30" width="30" />
     </div>
   )
@@ -310,7 +310,7 @@ class Home extends Component {
                   value={searchInput}
                 />
                 <button
-                  testid="searchButton"
+                  data-testid="searchButton"
                   type="button"
                   className="search-button"
                   onClick={this.onSubmitSearchInput}
@@ -343,19 +343,19 @@ class Home extends Component {
               type="button"
               onClick={this.leftArrowClicked}
               className="btn"
-              testid="pagination-left-button"
+              data-testid="pagination-left-button"
             >
               <IoIosArrowBack className="pagination-icon" />
             </button>
             <div className="pages-class">
-              <span testid="active-page-number">{activePage}</span> of{' '}
+              <span data-testid="active-page-number">{activePage}</span> of{' '}
               {totalPages}
             </div>
             <button
               type="button"
               onClick={this.rightArrowClicked}
               className="btn"
-              testid="pagination-right-button"
+              data-testid="pagination-right-button"
             >
               <IoIosArrowForward className="pagination-icon" />
             </button>

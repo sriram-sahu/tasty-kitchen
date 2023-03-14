@@ -150,7 +150,7 @@ class CartRoute extends Component {
               <h1 className="order-heading">Order Total:</h1>
               <div>
                 <div className="total-amount-container">
-                  <p testid="total-price" className="total-amount">
+                  <p data-testid="total-price" className="total-amount">
                     ₹ {totalCartAmount}.00
                   </p>
                 </div>
